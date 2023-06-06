@@ -42,5 +42,10 @@ const evenOrOdd = isEven(sumUserPcNumber)
 
 // Condition to see who won
 
+let winner = 'Il computer ha vinto'
+if (oddEvenUser  === evenOrOdd) {
+    winner = 'Hai vinto'
+}
 
 
+console.log(winner)
