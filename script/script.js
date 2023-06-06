@@ -25,6 +25,12 @@ function isPalindrome () {
         currentIndex--
     }
     
+    // Cicle with for
+    // for(let i = (userWord.length - 1); reverseWord.length !== userWord.length; i-- ) {
+    //     reverseWord += userWord.charAt(i);
+    // }
+
+
     // Conditions to see if the user word and reverse word are the same
     if (userWord === reverseWord) {
         palindromeWord = 'E\' una parola palindroma'
