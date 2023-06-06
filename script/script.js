@@ -37,6 +37,13 @@ function isPalindrome () {
     }
 
     console.log(palindromeWord)
+
+    return palindromeWord;
 }
 
-isPalindrome(userWord)
+
+
+// Added result in DOM
+const palindromeWordPlaceholder = document.getElementById('palindrome-word');
+
+palindromeWordPlaceholder.innerText = userWord + ' ' + isPalindrome()
