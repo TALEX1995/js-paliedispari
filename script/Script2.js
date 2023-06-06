@@ -3,9 +3,18 @@ console.log('JS OK')
 
 // User Chose odd or even and number
 
-const oddEvenUser = prompt('Scegli pari o dispari').toLowerCase().trim();
+let oddEvenUser = prompt('Scegli pari o dispari').toLowerCase().trim();
+// Validation oddEvenUser
+while (!(oddEvenUser === 'pari') && !(oddEvenUser === 'dispari')) {
+    oddEvenUser = prompt('Scegli pari o dispari').toLowerCase().trim();
+}
 
-const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+
+// Validation userNumber
+while (!(userNumber > 0) || !(userNumber < 6)) {
+    userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
+}
 
 
 // Set 2 variable for max and min
