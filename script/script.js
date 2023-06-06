@@ -4,11 +4,12 @@ console.log('JS OK')
 // Esercizio numero 1
 
 // Prompt to ask an user word
-const userWord = prompt('Scrivi una parola, ti dirò se è palindroma o no')
+const userWord = prompt('Scrivi una parola, ti dirò se è palindroma o no').toLowerCase()
 
 
 // Function for palindrome word
-function isPalindrome () {
+function isPalindrome (word) {
+    
     
     // Start variable false value
     let palindromeWord = 'Non è una parola palindroma';
@@ -17,11 +18,11 @@ function isPalindrome () {
     reverseWord = ''
 
     // Prepare currentIndex
-    let currentIndex = userWord.length - 1
+    let currentIndex = word.length - 1
     
     // Cicle to reverse the word
-    while (reverseWord.length !== userWord.length) {
-        reverseWord += userWord.charAt(currentIndex);
+    while (reverseWord.length !== word.length) {
+        reverseWord += word.charAt(currentIndex);
         currentIndex--
     }
     
@@ -32,7 +33,7 @@ function isPalindrome () {
 
 
     // Conditions to see if the user word and reverse word are the same
-    if (userWord === reverseWord) {
+    if (word == reverseWord) {
         palindromeWord = 'E\' una parola palindroma'
     }
 
@@ -42,8 +43,7 @@ function isPalindrome () {
 }
 
 
-
 // Added result in DOM
 const palindromeWordPlaceholder = document.getElementById('palindrome-word');
 
-palindromeWordPlaceholder.innerText = userWord + ' ' + isPalindrome()
+palindromeWordPlaceholder.innerText = userWord + ' ' + isPalindrome(userWord)
