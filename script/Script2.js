@@ -3,7 +3,7 @@ console.log('JS OK')
 
 // User Chose odd or even and number
 
-const oddEvenUser = prompt('Scegli pari o dispari');
+const oddEvenUser = prompt('Scegli pari o dispari').toLowerCase().trim();
 
 const userNumber = parseInt(prompt('Scegli un numero da 1 a 5'));
 
