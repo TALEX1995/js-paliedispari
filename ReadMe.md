@@ -32,3 +32,14 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
 Dichiariamo chi ha vinto.
+
+## Steps
+
+1. Creare un prompt per far scegliere all'utente pari o dispari
+1. Creare un prompt per far scegliere all'utente un numero da 1 a 5
+1. Creiamo una funzione per generare un numero per il computer da 1 a 5
+1. Sommo i due numeri
+1. Creo una funzione per stabilire se la somma e pari o dispari
+   - Creo una variabile dando per scontato che il numero sia pari
+   - Creo un if per andare a vedere se il numero inserito nella funzione e pari o dispari e in caso cambiare la variabile in dispari
+1. In base al risultato della funzione al numero 5 stabilisco chi ha vinto
