@@ -4,12 +4,13 @@ console.log('JS OK')
 // Esercizio numero 1
 
 // Prompt to ask an user word
-const userWord = prompt('Scrivi una parola, ti dirò se è palindroma o no').toLowerCase()
+const userWord = prompt('Scrivi una parola, ti dirò se è palindroma o no');
 
 
 // Function for palindrome word
 function isPalindrome (word) {
     
+    word = word.toLowerCase()
     
     // Start variable false value
     let palindromeWord = 'Non è una parola palindroma';
@@ -33,7 +34,7 @@ function isPalindrome (word) {
 
 
     // Conditions to see if the user word and reverse word are the same
-    if (word == reverseWord) {
+    if (word === reverseWord) {
         palindromeWord = 'E\' una parola palindroma'
     }
 
